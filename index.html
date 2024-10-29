@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><script>/* <![CDATA[ */ ringDataLayer = {"context":{"variant":{"accelerator":"ZG93bmxvYWQucG9jenRhLm9uZXQucGw6OnByb2Rfd2l0aF91c2VyX2RhdGFfZG93bmxvYWRlcl9pbl9hd3NfMg=="},"id":{"website":"9481b0b7-7c3d-463b-8f3c-9de5c8289e21"}}}; /* ]]> */</script><script>/* <![CDATA[ */ accConf = {"events":{"endpointPaths":["/a8f4d8cd95e164917035b64b867a45dd"]}}; /* ]]> */</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = 'stylesheet' href = 'style3.css'/>
+    <script>
+        function tlo(k){
+            document.getElementById('prawy').style.backgroundColor=k;
+        }function kolorcz(){
+            document.getElementById('prawy').style.color=document.getElementById('kon2').value;
+        }function rozmiarcz(){
+            document.getElementById('prawy').style.fontSize=document.getElementById('kon3').value;
+        }
+        function ramka(){
+            if(document.getElementById('check').checked) document.getElementById('obraz').style.border='1px solid white';
+            else document.getElementById('obraz').style.border='none';
+        }function punktor(o){
+            document.getElementById('lista').style.listStyleType=o;
+        }function filter(){
+            if (document.getElementById('check1').checked) document.getElementById('obraz').style.filter='sepia(100%)';
+            else {
+                document.getElementById('obraz').style.filter='sepia(0%)';
+            }
+        }
+    </script>
+</head>
+<body>
+    <section class = 'lewy'>
+        <h1>Konfigurator stylu</h1>
+        <br>
+        <p>Podaj Kolor Tła<br>
+        <button class = "indigo" onclick="tlo('indigo')">indigo</button>
+        <button class = "steelblue"onclick="tlo('steelblue')">steelblue</button>
+        <button class = "olive"onclick="tlo('olive')">olive</button>
+        </p>
+        <p>Podaj kolor czcionki<br>
+        <select id = 'kon2' onclick="kolorcz()">
+            <option value = 'White'>White</option>
+            <option value = 'Tan'>Tan</option>
+            <option value = 'Bisque'>Bisque</option>
+            <option value = 'Plum'>Plum</option>
+        </select></p>
+        <p>Podaj rozmiar czcionki w procentach
+        <input type = text value="100%" onblur ='rozmiarcz()' id = 'kon3'>
+        </p>
+        <p>Czy rysunek ma mieć ramkę<br>
+        Rysuj ramke<input type="checkbox" checked = '' id="check" onclick = 'ramka()'>
+        </p>
+        <p>jaki jest typ punktora listy?<br>
+        <label><input type="radio" name="radio" checked id="d" onclick = 'punktor("disc")'>Dysk</label><br>
+        <label><input type="radio" name="radio" id="k" onclick = 'punktor("square")'>kwadrat</label><br>
+        <label><input type="radio" name="radio" id="o" onclick = 'punktor("circle")'>okrąg</label>
+
+        
+        </p>
+        <p>
+            Czy ustawić sepię dla obrazka? <input type = 'checkbox' id = 'check1' onclick = 'filter()'/>
+        </p>
+    </section>
+    <section class = 'prawy' id = 'prawy'>
+        <img src="giblartar.jpg" id = 'obraz'>
+        <ul id="lista">
+            <li>Element1</li>
+            <li>Element2</li>
+            <li>Element3</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repellat aut iusto eligendi temporibus voluptate soluta, incidunt minima, sequi accusantium delectus expedita adipisci atque exercitationem eaque. Quaerat in vitae incidunt!
+
+        </p>
+    </section>
+    <footer class = "stopka">
+        Autorem jest Thomas Shelby Sigma
+    </footer>
+    
+</body>
+</html>
