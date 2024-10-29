@@ -1,0 +1,38 @@
+.lewy{
+    background-color: Maroon;
+    color:white;
+    height: 600px;
+    width: 30%;
+    float:left;
+}.prawy{
+    background-color: Maroon;
+    color:white;
+    height: 600px;
+    width: 70%;
+    overflow: auto;
+    float:left; 
+}.stopka{
+    background-color: dimgray;
+    color:white;
+    clear:both
+} * {
+    font-family: Georgia
+}.steelblue{
+    background-color: steelblue;
+    color:white;
+}.olive{
+    background-color: olive;
+    color:white;
+}.indigo{
+    background-color: indigo;
+    color:white;
+}img{
+    padding: 10px;
+    border:1px solid white;
+}p{
+    padding: 10px;
+}.prawy p{
+    clear:both;
+}.prawy ul,img{
+    float:left;
+}
